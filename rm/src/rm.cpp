@@ -16,11 +16,12 @@ int main() {
 
     //</> 2
     //=====================
-    // int a{2};
-    // if (a > 0)
-    //     std::cout << "a is positive\n";
-    // a = -a;  // this is always executed
-
+    int a{2};
+    if (a > 0){
+        std::cout << "a is positive\n";
+        a = -a;  // this is always executed
+        std::cout << a << '\n';
+    }
     //</> 3
     //=====================
     // int a{1};

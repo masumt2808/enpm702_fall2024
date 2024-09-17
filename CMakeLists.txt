@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(lecture2 VERSION 0.1.0)
+project(rm VERSION 0.1.0)
 
 # Compilation flags
 add_compile_options(-Wall)
 
 # Add executable
-add_executable(lecture2 lecture2/src/lecture2.cpp)
+add_executable(rm rm/src/rm.cpp)
 
 # add_custom_command(TARGET lecture3 POST_BUILD
 #     COMMAND ./lecture3 | c++filt -t
@@ -35,4 +35,4 @@ add_executable(lecture2 lecture2/src/lecture2.cpp)
 
 
 # Set C++ standard to C++17
-set_property(TARGET lecture2 PROPERTY CXX_STANDARD 17)
+set_property(TARGET rm PROPERTY CXX_STANDARD 17)

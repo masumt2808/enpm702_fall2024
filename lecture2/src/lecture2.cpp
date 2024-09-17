@@ -1,4 +1,4 @@
-// #include "lecture2.hpp"
+
 
 #include <iomanip>  // for output manipulator std::setprecision()
 #include <iostream>
@@ -53,14 +53,14 @@ using Float = float;
 using uint = unsigned int;
 
 int main() {
-    //</> 1
+    // </> 1
     //=====================
     //  int break1;  // OK
     //  int break_1; // OK
     //  int Break1;  // OK
     //  int BREAK;   // OK
     //  int _break1; // OK
-    //  // int 1Break;  // Error: expected unqualified-id before numeric constant
+    //  int 1Break;  // Error: expected unqualified-id before numeric constant
 
     //</> 2
     //=====================
@@ -78,17 +78,18 @@ int main() {
 
     //</> 4
     //=====================
-    // int a{};                                                      // initialized to 0
-    // std::cout << a << '\n';                                       // 0
-    // double b{};                                                   // initialized to 0.0
-    // std::cout << b << '\n';                                       // 0
-    // std::cout << std::fixed << std::setprecision(1) << b << '\n'; // 0.0
+    int a{};                                                      // initialized to 0
+    std::cout << a << '\n';                                       // 0
+    double b{};                                                   // initialized to 0.0
+    std::cout << b << '\n';                                       // 0
+    std::cout << std::fixed << std::setprecision(2) << b << '\n'; // 0.0
 
     //</> 5
     //=====================
     // int a{};   // the value of a will be replaced later
     // int b{0};  // we plan to use the value of b
     // a = b + 3; // value of b is used and a is assigned a new value
+    // std::cout << a << '\n';
 
     //</> 6
     //=====================
@@ -204,6 +205,10 @@ int main() {
     // int b{2 + 3 - 1}; // initialize variable b with computed value 4
     // int c{2 * 2 + 1}; // initialize variable c with computed value 5
     // int d{b};         // initialize variable d with variable value 4
+    // std::cout << a << '\n';
+    // std::cout << b << '\n';
+    // std::cout << c << '\n';
+    // std::cout << d << '\n';
 
     //</> 11
     //=====================
@@ -217,6 +222,8 @@ int main() {
     //=====================
     // double num1{5.0};   // no promotion necessary
     // double num2{4.0f};  // float promoted to double
+    // std::cout << num1 << '\n';
+    // std::cout << num2 << '\n';
 
     //</> 12-2
     //=====================
@@ -291,7 +298,7 @@ int main() {
     // int a{3};
     // int b{2};
     // std::cout << "Type of result: " << typeid(a / b).name() << '\n';
-    // std::cout << "Value of result: " << a / b << '\n';
+    // std::cout << "Value of result: " << static_cast <float>(a)/ b << '\n';
 
     //</> 19
     //=====================
@@ -359,7 +366,7 @@ int main() {
     // double area = PI * 10 * 10;
     // std::cout << area << '\n';
 
-    //</> 25-1
+    // //</> 25-1
     //=====================
     // const int a{1};              // a is a compile-time const
     // const int b{2};              // b is a compile-time const
