@@ -77,7 +77,7 @@ int main() {
     // std::cout << "hello" << '\n';  // C string literal
     // std::cout << "hello"s << '\n';  // C++ string literal
 
-    //</> 5
+    // //</> 5
     //=====================
     // std::string greeting{"hello"};
     // std::cout << greeting.length() << '\n';  // 5
@@ -114,11 +114,13 @@ int main() {
     //</> 9
     //=====================
     // std::string quote{"Just a flesh wound!"};
-    // /*
-    //     write a for loop to print each character of the string
-    // */
+        
+        
+    //     for(size_t i{0}; i < quote.length() ; i++){
+    //         std::cout << quote[i] << ' '; 
+    //     }
 
-    //</> 10
+    // //</> 10
     //=====================
     // std::string quote{"Just a flesh wound!"};
 
@@ -338,9 +340,9 @@ int main() {
 
     //</> 24
     //=====================
-    // std::string greeting{"Hello"};
-    // auto it = greeting.end();
-    // std::cout << *it << '\n';
+    std::string greeting{"Hello"};
+    auto it = greeting.end();
+    std::cout << *(it -1)<< '\n';
 
     //</> 25
     //=====================

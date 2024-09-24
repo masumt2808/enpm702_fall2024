@@ -23,10 +23,10 @@ int main() {
 
     //</> 2
     //=====================
-    // int x{10};
-    // std::cout << typeid(&x).name() << '\n';
-    // int *p_int;
-    // std::cout << typeid(p_int).name() << '\n';
+    int x{10};
+    std::cout << typeid(&x).name() << '\n';
+    int *p_int;
+    std::cout << typeid(p_int).name() << '\n';
 
     //</> 3-1
     //=====================
